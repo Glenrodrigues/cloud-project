@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "74px 40px 40px 40px",
   },
   resources: {
-    margin: "60px 40px 10px 40px",
+    margin: "60px 0px 40px 0px",
   },
   buttonStyleOne: {
     color: "white",
@@ -78,25 +78,25 @@ export default function Footer() {
         ) : (
           <>
             <Typography variant="h4" component="p">
-              FoodHub for Business
+              E-PHARM FOR BUSINESS
             </Typography>
             <Typography variant="body1" component="p">
               Get more out of your business, without losing focus on what is
               most important — delighting your customers
             </Typography>
             <br />
-            <Link to="/upload">
-              <Button className={classes.buttonStyleOne}>Get Started</Button>
+            <Link to="/upload" style={{ textDecoration: 'none' }}>
+              <Button className={classes.buttonStyleOne} >GET STARTED</Button>
             </Link>
           </>
         )}
       </Grid>
       <Grid item xs={12} sm={3} className={classes.innerCont}>
         <Typography variant="h5" component="p">
-          FoodHub NewsLetter
+          E-Pharm NewsLetter
         </Typography>
         <Typography variant="body1" component="p" style={{ marginBottom: 28 }}>
-          Stay updated with new offers from FoodHub
+          Stay updated with new offers from E-Pharm
         </Typography>
         <TextField label="Your Email address" variant="outlined" />
         <Button className={classes.buttonStyleTwo}>SEND</Button>
@@ -105,7 +105,7 @@ export default function Footer() {
         <Typography variant="h5" component="p">
           Resources/Stack Used
         </Typography>
-        <Typography variant="body1" component="p" style={{ marginBottom: 28 }}>
+        <Typography variant="body1" component="p" style={{ marginBottom: 0 }}>
           - React Material UI Redux
           <br />
           - NodeJs <br />
