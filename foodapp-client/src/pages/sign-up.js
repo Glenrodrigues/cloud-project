@@ -84,8 +84,8 @@ export default function Register() {
       <Grid item sm>
         <Typography variant="h3" className={classes.title}>
           Register{" "}
-          <span role="img" aria-label="Pizza Emoji">
-            🍕
+          <span role="img" aria-label="Tablet Emoji">
+            💊
           </span>
         </Typography>
         <form noValidate onSubmit={handleSubmit}>
