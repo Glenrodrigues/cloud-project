@@ -11,7 +11,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-import hamBurgerIcon from "../images/hamburger.jpg";
+import hamBurgerIcon from "../images/medbag.png";
 
 //custom-hook
 import useForm from "../hooks/forms";
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px 0px 10px 0px",
   },
   hamBurger: {
-    height: 200,
+    height: 240,
     width: 240,
   },
 }));
@@ -131,7 +131,7 @@ export default function Login() {
           </Button>
           <br />
           <small className={classes.small}>
-            don't have an account ? sign up <Link to="/register">here</Link>
+            Don't have an account ? Sign up <Link to="/register">here</Link>
           </small>
         </form>
       </Grid>
