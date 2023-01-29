@@ -4,8 +4,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-
-import cover from "../images/food_upscaled.png";
+//import cover from "../images/med.jpg";
+import cover from "../images/bcg.png";
 
 const useStyles = makeStyles((theme) => ({
   presentation: {
@@ -42,15 +42,16 @@ const useStyles = makeStyles((theme) => ({
   cover: {
     flex: 1,
     display: "flex",
-    justifyContent: "center",
-    height: "72vh",
+    justifyContent: "right",
+    height: "70vh",
   },
   coverImg: {
-    height: "100%",
+    height: "auto",
+    width: "auto",
   },
   ctaOrder: {
     fontSize: 18,
-    backgroundColor: "#f7a692",
+    backgroundColor: "dimgray",
     marginTop: 30,
   },
 }));
@@ -58,18 +59,17 @@ const useStyles = makeStyles((theme) => ({
 const HomeStart = () => {
   const classes = useStyles();
   return (
+    
     <section className={classes.presentation}>
       <div className={classes.introduction}>
         <Typography className={classes.safeFood} noWrap>
-          Safe Food
+          MEDICINE
         </Typography>
         <Typography className={classes.delivery} noWrap>
           DELIVERY
         </Typography>
         <Typography variant="body2" className={classes.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet.
+          INTRODUCTION........
         </Typography>
         <Button variant="outlined" className={classes.ctaOrder}>
           ORDER NOW
@@ -78,7 +78,9 @@ const HomeStart = () => {
       <div className={classes.cover}>
         <img src={cover} alt="safe-delivery" className={classes.coverImg} />
       </div>
+      
     </section>
+    
   );
 };
 
