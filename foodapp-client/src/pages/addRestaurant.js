@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AddRestaurant() {
+//export default function AddRestaurant() {
+  export default function AddPharmacy() {
   const classes = useStyles();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -95,8 +96,6 @@ export default function AddRestaurant() {
   let phoneNoError = null;
   let nameError = null;
   let tagsError = null;
-  let costForOneError = null;
-  let minOrderError = null;
   let paymentError = null;
 
   if (errors) {
@@ -108,9 +107,6 @@ export default function AddRestaurant() {
       if (error.msg.includes("Passwords have to"))
         confirmPasswordError = error.msg;
       if (error.msg.includes("10 digit phone")) phoneNoError = error.msg;
-      if (error.msg.includes("Minimum Order")) minOrderError = error.msg;
-      if (error.msg.includes("Cost for one cannot"))
-        costForOneError = error.msg;
       if (error.msg.includes("Zipcode cannot")) zipError = error.msg;
       if (error.msg.includes("Locality cannot")) localityError = error.msg;
       if (error.msg.includes("Apartment name cannot")) aptError = error.msg;
@@ -129,8 +125,6 @@ export default function AddRestaurant() {
     formData.append("name", inputs.name);
     formData.append("email", inputs.email);
     formData.append("tags", inputs.tags);
-    formData.append("costForOne", inputs.costForOne);
-    formData.append("minOrderAmount", inputs.minOrderAmount);
     formData.append("street", inputs.street);
     formData.append("aptName", inputs.aptName);
     formData.append("locality", inputs.locality);
@@ -148,8 +142,6 @@ export default function AddRestaurant() {
       name: "",
       email: "",
       tags: "",
-      costForOne: "",
-      minOrderAmount: "",
       street: "",
       aptName: "",
       locality: "",
@@ -175,7 +167,8 @@ export default function AddRestaurant() {
                   className={classes.title}
                   style={{ textAlign: "center" }}
                 >
-                  Add a Restaurant
+                  
+                  Register Pharmacy
                 </Typography>
                 <Typography
                   variant="body1"
@@ -188,7 +181,7 @@ export default function AddRestaurant() {
                   <TextField
                     id="restName"
                     name="name"
-                    label="Restaurant Name"
+                    label="Pharmacy Name"
                     className={classes.textField}
                     placeholder="Your restaurant name"
                     onChange={handleInputChange}
@@ -215,7 +208,7 @@ export default function AddRestaurant() {
                     id="tags"
                     name="tags"
                     label="Tags"
-                    placeholder="North-Indian, Desserts, Bakery"
+                    placeholder="Medical,Pharmacy,pharmaceutical"
                     className={classes.textField}
                     onChange={handleInputChange}
                     value={inputs.tags}
@@ -224,34 +217,7 @@ export default function AddRestaurant() {
                     fullWidth
                     required
                   />
-                  <TextField
-                    id="costForOne"
-                    name="costForOne"
-                    label="Cost For One"
-                    placeholder="Cost for single person"
-                    className={classes.textField}
-                    onChange={handleInputChange}
-                    value={inputs.costForOne}
-                    helperText={costForOneError}
-                    error={costForOneError ? true : false}
-                    type="number"
-                    fullWidth
-                    required
-                  />
-                  <TextField
-                    id="minOrderAmount"
-                    name="minOrderAmount"
-                    label="Min Order Amount"
-                    placeholder="Minimum amount to place order"
-                    className={classes.textField}
-                    onChange={handleInputChange}
-                    value={inputs.minOrderAmount}
-                    helperText={minOrderError}
-                    error={minOrderError ? true : false}
-                    type="number"
-                    fullWidth
-                    required
-                  />
+                  
                   <Typography
                     variant="body2"
                     component="p"
@@ -365,16 +331,6 @@ export default function AddRestaurant() {
                   )}
 
                  
-                  <Link to= "/upload">
-                    <Button
-                      variant="contained"
-                      color="Primary"
-                    >
-                      Verify your store
-                    </Button>
-                  </Link>
-                  
-                   
 
 
 
@@ -438,7 +394,7 @@ export default function AddRestaurant() {
                     className={classes.small}
                     style={{ marginLeft: "260px" }}
                   >
-                    Partner with FoodHub and scale your business
+                    Partner with E-Pharma and scale your business
                   </small>
                 </form>
               </Grid>
@@ -466,9 +422,9 @@ export default function AddRestaurant() {
               color="textPrimary"
               style={{ marginLeft: "30px", fontSize: "16px" }}
             >
-              1. Tell us about your restaurant. <br />
+              1. Tell us about your Pharmacy. <br />
               2. Verify your Email. <br />
-              3. Access Restaurant Dashboard and go live.
+              3. Access Pharmacy Dashboard and go live.
               <br />
               <br />
               <br />
@@ -480,3 +436,4 @@ export default function AddRestaurant() {
     </div>
   );
 }
+
