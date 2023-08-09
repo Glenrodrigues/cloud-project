@@ -12,3 +12,4 @@ To get the server running locally:
 By default the local server will start on port 3000
 
 Note: The Google API key should have access to Javascript Maps, Places API, and Geocoding API
+bfg
