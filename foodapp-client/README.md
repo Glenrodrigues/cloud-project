@@ -24,12 +24,26 @@ This solutionaimstoprovide patients with a seamless and convenient medication ma
 * Output: Json file containing all the information related to two faceandcomparison result.
 
 ###  Text Extraction
-• Description:Sellers will be requested to upload license of pharmacy andtext
-will be extracted from that document and compare it with pre define rulesand then it is stored in Mongodb database . • Input:Upload License. • Processing state:AWS service Textract will extract the text and it will beprocess with pre define rules. • Output: Stored in database containing user id ,users shop nameandextracted info from the documents.
-11
-3.1.5 Prescription upload
-• Description:Customers can place order by uploading the prescriptionandseller will receive mail containing all the information related to it ,seller canview the prescription from the cloud . • Input:Photo Prescription. • Processing state:Uploaded photo of prescription will be convertedintobase64 format and store it on cloudinary and the link to viewit will bemailed to seller • Output: Mail to seller which will contain the link to viewprescriptionandaddress related information. 3.1.6 A* searching algorithm
-• Description:Customers can look for pharmacy near themand order themedicine from their. So we are using A* algorithm to display the pharmacyaccording to their distance ,smallest distance will be displayed first. • Input:Current Location of user. • Processing state:Pharmacy within 10km will be displayed we are usingGoogleGeocoding Api from GCP and to display according to their distancewe are using A* algorithm. • Output: Pharmacy within 10km and shorted distance will be displayed. 3.1.7 Seller dashboard
-• Description:A dashboard would be visible to the seller to analyze andtrackthe orders. • Input:Visiting the dashboard or usage page. • Processing state:Uploaded photo of prescription will be convertedintobase64 format and store it on cloudinary and the link to viewit will bemailed to seller
-12
+* Description:Sellers will be requested to upload license of pharmacy and text will be extracted from that document and compare it with pre define rulesand then it 
+  is stored in Mongodb database .
+* Input:Upload License.
+* Processing state:AWS service Textract will extract the text and it will beprocess with pre define rules.
+* Output: Stored in database containing user id ,users shop nameandextracted info from the documents.
+
+### Prescription upload
+* Description:Customers can place order by uploading the prescriptionandseller will receive mail containing all the information related to it ,seller canview the prescription from the cloud .
+* Input:Photo Prescription.
+* Processing state:Uploaded photo of prescription will be convertedintobase64 format and store it on cloudinary and the link to viewit will bemailed to seller
+* Output: Mail to seller which will contain the link to viewprescriptionandaddress related information.
+*
+### A* searching algorithm
+* Description:Customers can look for pharmacy near themand order themedicine from their. So we are using A* algorithm to display the pharmacyaccording to their distance ,smallest distance will be displayed first.
+* Input:Current Location of user.
+* Processing state:Pharmacy within 10km will be displayed we are usingGoogleGeocoding Api from GCP and to display according to their distancewe are using A* algorithm.
+* Output: Pharmacy within 10km and shorted distance will be displayed.
+
+### Seller dashboard
+* Description:A dashboard would be visible to the seller to analyze andtrackthe orders.
+* Input:Visiting the dashboard or usage page.
+* Processing state:Uploaded photo of prescription will be convertedintobase64 format and store it on cloudinary and the link to viewit will bemailed to seller
 • Output: Showing orders pending and add product.
