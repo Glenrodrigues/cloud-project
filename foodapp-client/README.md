@@ -1,15 +1,5 @@
-# foodHub-frontend
-Front-end for food delivery application created using reactjs along with redux and Material-UI
+# Cloud Based website : Frontend 
 
-## Getting started
-To get the server running locally:
+Cloud-based pharmacy web app includes features suchas patient registration, medication ordering and refill requests, medication management and uploading prescription and renewals, secure communicationwithpharmacists, drug information and interaction checking,cloud-based convenienceand multi-device access, and enhanced security and privacy. 
 
-* Clone this repo
-* npm install to install all required dependencies
-* replace the environment variables in .env and also add your Google API Key in index.html
-* npm start to start the local server
-
-By default the local server will start on port 3000
-
-Note: The Google API key should have access to Javascript Maps, Places API, and Geocoding API
-bfg
+This solutionaimstoprovide patients with a seamless and convenient medication management experience, improve communication with pharmacists, and enhance medicationadherence for better patient outcomes
