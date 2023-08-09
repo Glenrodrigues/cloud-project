@@ -6,7 +6,7 @@ This solution aims to provide patients with a seamless and convenient medication
 
 # Deployment
 
-
+![image description](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/workflow.png)
 
 
 
