@@ -74,9 +74,10 @@ Here's an explainiation of actions happening internally as the user progresses u
   * Seller photo will be take through webcam.
   * Seller will upload adhar,driving licence and `AI(AWS REKOGNITION)` service will compare the face and based on that it will allow user to futher process.
   * Seller Document like adhar,Driving Licence text will be extracted using `AWS textextract` service and will store it in `MONGO DB`.
-2.Seller can customize its dashboard.
-3.They can upload medicine
-4.They can all reject or accept the order.
+
+2. Seller can customize its dashboard.
+3. They can upload medicine.
+4. They can all reject or accept the order.
  
  
 
