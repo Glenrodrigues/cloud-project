@@ -62,7 +62,7 @@ This solutionaimstoprovide patients with a seamless and convenient medication ma
 
 Here's an explainiation of actions happening internally as the user progresses using the app
 
-https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/text%20extract.png
+![image description](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/Customer_model.png)
 
 ### Client Frontend
 1. User register its self on `/register` page.
