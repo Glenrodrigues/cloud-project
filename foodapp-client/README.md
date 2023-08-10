@@ -37,6 +37,8 @@ This solutionaimstoprovide patients with a seamless and convenient medication ma
 * Processing state:AWS service Textract will extract the text and it will beprocess with pre define rules.
 * Output: Stored in database containing user id ,users shop nameandextracted info from the documents.
 
+![image description](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/text%20extract.png)
+
 ### Prescription upload
 * Description:Customers can place order by uploading the prescriptionandseller will receive mail containing all the information related to it ,seller canview the prescription from the cloud .
 * Input:Photo Prescription.
@@ -59,6 +61,8 @@ This solutionaimstoprovide patients with a seamless and convenient medication ma
 # App Flow
 
 Here's an explainiation of actions happening internally as the user progresses using the app
+
+https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/text%20extract.png
 
 ### Client Frontend
 1. User register its self on `/register` page.
