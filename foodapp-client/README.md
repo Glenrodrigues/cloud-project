@@ -79,6 +79,8 @@ Here's an explainiation of actions happening internally as the user progresses u
 5. User can directly share their prescription to particular Pharmacy on page `/Prescription`.
 6. User Prescription will be uploaded to 'Cloudinary' webiste and email will be send to seller containing all the details of user and prescription.
 
+![Seller-flow](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/seller.png)
+
 ### Seller Frontend
 1.Seller register its self on `/Selleregister` page
   * Seller has to provide all the legit document to verify itself.
