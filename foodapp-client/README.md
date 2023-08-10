@@ -2,7 +2,7 @@
 
 
 
-![image description](C:\Users\ASUS\Documents\devops\Cloud devops\customer_model.png)
+
 
 
 
@@ -28,6 +28,7 @@ This solutionaimstoprovide patients with a seamless and convenient medication ma
 * Input:Take photo through webcam.
 * Processing state:AWS service rekognition will predict the similarities between two face.
 * Output: Json file containing all the information related to two faceandcomparison result.
+  ![image description](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/face.png)
 
 ###  Text Extraction
 * Description:Sellers will be requested to upload license of pharmacy and text will be extracted from that document and compare it with pre define rulesand then it 
