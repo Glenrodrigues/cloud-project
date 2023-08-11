@@ -4,10 +4,13 @@ Cloud-based pharmacy web app includes features suchas patient registration, medi
 
 This solution aims to provide patients with a seamless and convenient medication management experience, improve communication with pharmacists, and enhance medicationadherence for better patient outcomes
 
-# Deployment
+# Deployment using AWS tools
 
 ![image description](https://github.com/Glenrodrigues/cloud-project/blob/main/foodapp-client/public/workflow.png)
 
+### Code_commit
+    * code from local machine is pushed to remote repository of AWS code_commit.
+    
 
 
 
